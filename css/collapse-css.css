@@ -1,0 +1,477 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.slicknav_menu {display:none}
+
+
+
+/*Accordion Style CSS*/
+
+.accordion-collapse_nested h3{border-top:1px solid #ddd;}
+div.accordion-collapse_nested h3 a:before{top: -4px;background:#16a085;}
+div.accordion-collapse_nested h3 a:before{top: -4px;}
+div.accordion-collapse_nested h3.open a:before{background:#2c3e50;}
+
+div.accordion-collapse_nested_two h3 a:before {margin-left:525px;}
+div.accordion-collapse_nested_two h3 a {padding-left: 0px;}
+div.accordion-collapse_nested_two > div {margin-left: 0px;}
+div.accordion-collapse_nested_two h3 a:before{background:#EB974E;}
+div.accordion-collapse_nested_two h3.open a:before{background:#F9690E}
+
+.accordion-collapse > div {margin-left: 40px; margin-top: 10px;}
+.accordion-collapse h3 {margin-top: 10px;}
+.accordion-collapse {}
+.accordion-collapse h3{}
+.accordion-collapse h3 a{position:relative;font-size: 14px;font-weight: normal;line-height: 20px;text-decoration:none;padding-left:40px;color: #666;padding-top: 5px;}
+.accordion-collapse h3 a:before{position:absolute;content:"+";top:0;left:0;height:30px;width:30px;background:#2980b9;color:#FFF;text-align:center;padding-top:5px}
+.accordion-collapse h3.open a:before{content:"-";background:#8e44ad;}
+
+
+div.accordion-another_nested h3{border-top:1px solid #ddd;}
+div.accordion-another_nested h3 a:before{top: -4px;border: 15px solid #2c3e50;border-top-width: 22px;border-bottom-color: transparent;}
+div.accordion-another_nested .minus-plus{top:0}
+div.accordion-another_nested h3.open a:before{}
+
+div.accordion-another_nested_two h3 a:before{margin-left: 524px;}
+div.accordion-another_nested_two .minus-plus {margin-left: 525px;}
+div.accordion-another_nested_two h3 a {padding-left: 0px;}
+div.accordion-another_nested_two > div {margin-left: 0px;}
+div.accordion-another_nested_two h3 a:before{border: 15px solid #1F3A93;border-top-width: 22px;border-bottom-color: transparent;}
+div.accordion-another_nested_two h3.open a:before{border: 15px solid #1E824C;border-top-width: 22px;border-bottom-color: transparent;}
+
+.accordion-another{}
+.accordion-another > div {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.accordion-another h3 {
+    margin-top: 15px;
+}
+
+.accordion-another h3 a{position:relative;font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;text-decoration:none;padding-left:40px;color: #666;padding-top: 5px;}
+.accordion-another h3 a:before{position:absolute;content:"";top:0;left:0;display: block;
+  border: 15px solid #e74c3c;
+  border-top-width: 22px;
+  border-bottom-color: transparent;}
+  .accordion-another h3.open a:before{border: 15px solid #d35400;    border-top-width: 22px;
+    border-bottom-color: transparent;}
+.accordion-another .minus-plus{position:absolute;color:#fff;font-size:12px;left:10px;top:5px}
+.accordion-another .fa-plus{display:inline-block;}
+.accordion-another h3.open .fa-plus{display:none;}
+.accordion-another h3.open .fa-minus{display:inline-block;}
+.accordion-another .fa-minus{display:none;}
+
+.accordion-two {}
+.accordion-two h3{}
+.accordion-two h3 a{position:relative;font-size:20px;text-decoration:none;padding-left:40px}
+.accordion-two h3 a:before{position:absolute;content:"";top:0;left:0;display: block;border-style: solid;
+ border-color: #804f7c transparent transparent transparent;border-width: 20px 0 0 20px;}
+
+ 
+ .accordion-two .minus-plus{position:absolute;color:#fff;font-size:12px;left:10px;top:5px}
+.accordion-two .fa-plus{display:inline-block;}
+.accordion-two h3.open .fa-plus{display:none;}
+.accordion-two h3.open .fa-minus{display:inline-block;}
+.accordion-two .fa-minus{display:none;}
+
+
+/*Accordion Style CSS for PPM*/
+	
+div.style_latest h3 a:hover span.wm-accordion-icon{opacity:1;}
+div.style_latest a:hover span.wm-accordion-icon, div.style_latest h3.open span.wm-accordion-icon{background-position:4px -21px;}
+div.style_latest h3.open + div{margin:15px 0;}
+div.style_latest h3 a:hover span.wm-accordion-icon{background-color:#ddd;}
+div.style_latest a:hover span.wm_accordion_bottom_icon{border-top:9px solid #ddd;}
+	
+div.style_latest7 h3 a:hover span.wm-accordion-icon {background-color:#EC5D4E !important;;}
+div.style_latest7 h3 a:hover span.wm-accordion-icon, div.style_latest7 h3.open span.wm-accordion-icon{background-color:#EC5D4E !important;}
+div.style_latest7 a:hover span.wm_accordion_bottom_icon {border-top: 9px solid #EC5D4E !important;}		
+div.style_latest7 a:hover span.wm_accordion_bottom_icon, div.style_latest7 h3.open span.wm_accordion_bottom_icon{border-top: 9px solid #EC5D4E !important;}	
+	
+.accordion-Latest{margin-bottom:10px}
+.accordion-Latest h3{font-size: 15px;font-weight: normal;line-height: 20px}
+.accordion-Latest h3 a{color: #666;text-decoration: none;display:block;position: relative;}
+div.style_latest h3 {border-bottom: 0px solid #ddd;border-top: 1px solid #ddd;}
+.wm-tabs-default h3 {font-size: 14px;font-weight: normal;line-height: 20px;margin: 0 0 5px !important;padding: 0 0 5px;}
+div.style_latest h3 a {margin-bottom: -5px;padding: 0;line-height: 33px;}
+.wm-tabs-default h3 a {display: block; line-height: 25px; padding: 5px 0; color: #666; text-decoration: none; position: relative;}
+div.style_latest span.wm-accordion-icon {background-position: 4px 5px;height: 35px;width: 35px;}
+.accordion-Latest span.wm-accordion-icon {background-color: #FCD209;}
+
+.wm-tabs-default span.wm-accordion-icon {background-image: url(icon.png);background-position: no-repeat;background-position: 0 0;display: block;float: left;height: 25px;margin-right: 10px;width: 25px;opacity: 1;-webkit-transition: all 0.5s ease 0s;-moz-transition: all 0.5s ease 0s;-o-transition: all 0.5s ease 0s;transition: all 0.5s ease 0s;}
+div.style_latest7 span.wm_accordion_bottom_icon {border-top: 9px solid #FCD209;}
+
+div.style_latest span.wm_accordion_bottom_icon { border-left: 8px solid rgba(0, 0, 0, 0);border-right: 8px solid rgba(0, 0, 0, 0);bottom: -11px; height: 0;left: 10px;position: absolute;width: 0;z-index: 5;border-top: 9px solid #FCD209;-webkit-transition: all 0.5s ease 0s;-moz-transition: all 0.5s ease 0s;-o-transition: all 0.5s ease 0s;transition: all 0.5s ease 0s;}
+div.style_latest span.wm_accordion_bottom_icon:before { background: none repeat scroll 0 0 #FFFFFF; border-top: 1px solid #FFFFFF; content: ""; display: block; height: 1px; left: -10px; position: absolute; top: -4px;-webkit-transform: rotate(47deg);-moz-transform: rotate(47deg);-ms-transform: rotate(47deg);-o-transform: rotate(47deg);transform: rotate(47deg);width: 13px;}
+
+div.style_latest span.wm_accordion_bottom_icon:after { background: none repeat scroll 0 0 #FFFFFF;border-bottom: 1px solid #FFFFFF;content: "";display: block;height: 1px;left: -2px;position: absolute;top: -4px;-webkit-transform: rotate(131deg);-moz-transform: rotate(131deg);-ms-transform: rotate(131deg); -o-transform: rotate(131deg);transform: rotate(131deg); width: 11px;}
+
+.wm-tabs-default h3 + div {height: 0px;padding: 0px;overflow: hidden; display: block!important;-webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0);-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+.wm-tabs-default .tab_content {overflow: hidden;padding: 0 0 0 35px;}
+.ppm-tabs-default, .wm-tabs-default{margin-top:20px}
+
+
+/*Nested CSS for PPM*/
+
+
+div.accordion-Latest_nested span.wm_accordion_bottom_icon {border-left: 0px solid rgba(0, 0, 0, 0); border-right: 0px solid rgba(0, 0, 0, 0);}
+div.accordion-Latest_nested span.wm_accordion_bottom_icon:before {background: none; border-top: 0px solid #FFFFFF; }
+div.accordion-Latest_nested span.wm_accordion_bottom_icon:after {background: none; border-bottom: 0px solid #FFFFFF; }
+div.accordion-Latest_nested span.wm-accordion-icon {background-color: #F62459;}
+
+div.accordion-Latest_nested_two{}
+div.accordion-Latest_nested_two h3 {border-top: 0px solid #ddd;}
+div.accordion-Latest_nested_two span.wm-accordion-icon {background-color: #F22613;}
+div.accordion-Latest_nested_two span.wm_accordion_bottom_icon {border-top: 9px solid #F22613;}
+div.accordion-Latest_nested_two h3 a:hover span.wm-accordion-icon, div.accordion-Latest_nested_two h3.open span.wm-accordion-icon {background-color: #663399 !important;}
+div.accordion-Latest_nested_two a:hover span.wm_accordion_bottom_icon, div.accordion-Latest_nested_two h3.open span.wm_accordion_bottom_icon {border-top: 9px solid #663399 !important;}
+
+
+div.accordion-Latest_nested_three{}
+div.accordion-Latest_nested_three span.wm-accordion-icon {float: right;}
+div.accordion-Latest_nested_three span.wm_accordion_bottom_icon {    margin-left: 520px; border-left: 8px solid rgba(0, 0, 0, 0);border-right: 8px solid rgba(0, 0, 0, 0);}
+div.accordion-Latest_nested_three span.wm-accordion-icon {margin-right: 0px;}
+div.accordion-Latest_nested_three .tab_content {padding: 0 0 0 0px;}
+ .tab_content {padding: 0 0 0 0px;}
+ .tab_content {padding: 0 0 0 0px;}
+div.accordion-Latest_nested_three span.wm_accordion_bottom_icon {border-top: 9px solid #D35400;}
+div.accordion-Latest_nested_three span.wm-accordion-icon {background-color: #D35400;}
+
+
+/*Accordion collapse angle CSS style */
+.accordion-collapse_angle {}
+.accordion-collapse_angle h3 { margin-top: 15px;}
+.accordion-collapse_angle h3 a{position:relative;font-size: 14px;font-weight: normal;line-height: 20px;text-decoration:none;padding-left:40px;color: #666;padding-top: 5px;}
+.accordion-collapse_angle h3 a:before{position:absolute;content:"";top:-3;left:0;height:35px;width:35px;background:#663399;color:#FFF;text-align:center;padding-top:5px}
+.accordion-collapse_angle h3.open a:before {background:#8e44ad;}
+
+.accordion-collapse_angle .angle-down{position:absolute;color:#fff;font-size:17px;left:13px;top:7px}
+.accordion-collapse_angle .fa-down{display:inline-block;}
+.accordion-collapse_angle h3.open .fa-down{display:none;}
+.accordion-collapse_angle h3.open .fa-right{display:inline-block;}
+.accordion-collapse_angle .fa-right{display:none;}
+.accordion-collapse_angle .tab_content {padding: 4px 0 0 35px;}
+
+div.accordion-collapse_angle_nested h3{border-top:1px solid #ddd;}
+div.accordion-collapse_angle_nested h3 a:before{background:#4183D7;}
+
+/*Accordion collapse caret CSS style */
+.accordion_collapse_caret{}
+
+.accordion_collapse_caret h3 { margin-top: 15px;}
+.accordion_collapse_caret h3 a{position:relative;font-size: 14px;font-weight: normal;line-height: 20px;text-decoration:none;padding-left:40px;color: #666;padding-top: 5px;}
+.accordion_collapse_caret h3 a:before{position:absolute;content:"";top:-3;left:0;height:35px;width:35px;background:#F39C12;color:#FFF;text-align:center;padding-top:5px}
+.accordion_collapse_caret h3.open a:before {background:#8e44ad;}
+
+
+.accordion_collapse_caret .wm-caret{position:absolute;color:#fff;font-size:17px;left:13px;top:7px}
+.accordion_collapse_caret .fa-caret{display:inline-block;}
+.accordion_collapse_caret h3.open .fa-caret{display:none;}
+.accordion_collapse_caret h3.open .fa-caret-right{display:inline-block;}
+.accordion_collapse_caret .fa-caret-right{display:none;}
+.accordion_collapse_caret .tab_content {padding: 4px 0 0 35px;}
+
+div.accordion_collapse_caret_nested h3{border-top:1px solid #ddd;}
+div.accordion_collapse_caret_nested h3 a:before{background:#6C7A89;}
+
+
+/*Accordion collapse arrow CSS style */
+.accordion_collapse_arrow h3 { margin-top: 15px;}
+.accordion_collapse_arrow h3 a{position:relative;font-size: 14px;font-weight: normal;line-height: 20px;text-decoration:none;padding-left:40px;color: #666;padding-top: 5px;}
+.accordion_collapse_arrow h3 a:before{position:absolute;content:"";top:-3;left:0;height:35px;width:35px;background:#049372;color:#FFF;text-align:center;padding-top:5px}
+.accordion_collapse_arrow h3.open a:before {background:#8e44ad;}
+
+.accordion_collapse_arrow .wm-arrow{position:absolute;color:#fff;font-size:12px;left:13px;top:7px}
+.accordion_collapse_arrow .fa-arrow-down{display:inline-block;}
+.accordion_collapse_arrow h3.open .fa-arrow-down{display:none;}
+.accordion_collapse_arrow h3.open .fa-arrow-right{display:inline-block;}
+.accordion_collapse_arrow .fa-arrow-right{display:none;}
+.accordion_collapse_arrow .tab_content {padding: 4px 0 0 35px;}
+
+div.accordion_collapse_arrow_nested h3{border-top:1px solid #ddd;}
+div.accordion_collapse_arrow_nested h3 a:before{background:#CF000F;}
+
+.accordion-Latest{padding-bottom:20px}
+.accordion-collapse{padding-bottom:20px}
+.accordion-another{padding-bottom:20px}
+.accordion-collapse_nested{padding-bottom:20px}
